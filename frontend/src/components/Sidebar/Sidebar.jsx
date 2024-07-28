@@ -10,7 +10,7 @@ import { useAuthContext } from '../../context/AuthContext.jsx'
 const Sidebar = () => {
 	const {url} = useAuthContext();
 	const [user, setUser] = useState({});
-	const [showProfile,setShowProfile] = useState(true);
+	const [showProfile,setShowProfile] = useState(false);
 	const token = localStorage.getItem("token")
 	
 	const getCurrentUser = async () =>{
