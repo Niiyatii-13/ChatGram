@@ -9,7 +9,7 @@ const useGetMessages = ({id}) => {
 
 	const [message,setMessage] = useState([]);
 	const token = localStorage.getItem("token")
-	const url = 'http://localhost:4000'
+	const {url} = useAuthContext()
 	useEffect(() => {
 		const getMessages = async () => {
 			setLoading(true)
