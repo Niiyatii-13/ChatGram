@@ -2,11 +2,12 @@ import { useState } from "react";
 import useConversation from "../zustand/useConversation";
 import toast from "react-hot-toast";
 import axios from 'axios'
+import {useAuthContext} from '../context/AuthContext.jsx' 
 
 const useSendMessage = () => {
 	const [loading, setLoading] = useState(false);
 	const { messages, setMessages, selectedConversation } = useConversation();
-    const url = 'http://localhost:4000'
+    const {url} = useAuthContext();
     const token = localStorage.getItem("token")
 	const sendMessage = async (message) => {
 		setLoading(true);
