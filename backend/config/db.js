@@ -3,7 +3,7 @@ import 'dotenv'
 
 const connectDB = async ()=>{
     try {
-        await mongoose.connect("mongodb+srv://tanishqjain7310:Tanishq071003@cluster0.iiv3upu.mongodb.net/chatApp?retryWrites=true&w=majority&appName=Cluster0")
+        await mongoose.connect("mongodb+srv://niyati260:niyat130603@cluster0.zjbqj5y.mongodb.net/ChatGram")
         console.log("DB connected");
     } catch (error) {
         console.log("Error in database connection",error.message)
