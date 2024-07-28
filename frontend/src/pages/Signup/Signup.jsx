@@ -3,7 +3,7 @@ import axios from "axios"
 import toast from 'react-hot-toast'
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../context/AuthContext'
-import upload_img from "frontend/src/assets/upload_area.png"
+import upload_img from "../../assets/upload_area.png"
 
 const Signup = () => {
   const {url} = useAuthContext();
