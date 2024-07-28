@@ -4,13 +4,14 @@ import axios from 'axios'
 import { IoSearchSharp } from "react-icons/io5";
 import useConversations from '../../hooks/useGetConversations'
 import useGetConversations from '../../hooks/useGetConversations';
+import { useAuthContext } from '../../context/AuthContext';
 
 const SearchInput = () => {
 
 
   	const [search, setSearch] = useState("");
 	const {conversations} = useGetConversations();
-	const url = 'http://localhost:4000';
+	const {url} = useAuthContext();
 	const token = localStorage.getItem("token")
 
   const handleSubmit = async (e) => {
