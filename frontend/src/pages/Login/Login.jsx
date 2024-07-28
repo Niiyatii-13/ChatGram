@@ -30,7 +30,7 @@ export const Login = () => {
         <div className='w-full flex flex-col p-6 items-center justify-center'>
           <h1 className='text-slate-100 text-3xl font-medium text-center'>
             Login
-            <span className='bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent'> TalkNet</span>
+            <span className='bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent'> ChatGram</span>
           </h1>
 
           <form onSubmit={onLogin}>
