@@ -50,7 +50,7 @@ const onSignup = async(e)=>{
         <div className='w-full p-6 bg-gradient-to-r rounded-2xl from-slate-900 to-slate-700 shadow-[0px_0px_15px_5px_#4a5568]'>
           <h1 className='text-slate-100 text-3xl font-medium text-center'>
             Sign Up
-            <span className='bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent'> TalkNet</span>
+            <span className='bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent'> ChatGram</span>
           </h1>
         
 
