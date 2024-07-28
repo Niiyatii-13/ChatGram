@@ -6,9 +6,7 @@ import protectRoute from "../middleware/protectRoute.js";
 const userRoute = express.Router()
 
 const storage = multer.diskStorage({
-    destination:function(req,file,cb){
-        cb(null,'uploads')
-    },
+    destination:'uploads',
     filename: (req, file, cb) => {
         return cb(null,`${Date.now()}${file.originalname}`);
     }
