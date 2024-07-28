@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
 	const [authUser, setAuthUser] = useState(localStorage.getItem("token") || null);
 	const [user, setUser] = useState({});
 	const token = localStorage.getItem("token")
-	const url = "http://localhost:4000";
+	const url = "https://chatgrambackend.onrender.com";
 	
 	const getCurrentUser = async () =>{
 		const response = await axios({
