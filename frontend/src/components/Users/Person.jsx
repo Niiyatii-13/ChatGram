@@ -32,7 +32,7 @@ const Person = ({lastIndex,item}) => {
     <div className={`flex rounded-full shadow-2xl p-2 h-24 gap-2 items-center  hover:bg-gray-800 py-1 cursor-pointer duration-200 hover:drop-shadow-lg`}>
         <div className={`avatar`}>
  			    <div className='w-20 rounded-full '>
- 						<img src={url+'/images/'+image} alt='user'/>
+ 						<img src={url+'/images/'+item.image} alt='user'/>
  					</div>
  			  </div>
             <div className='flex flex-col justify-between'>
