@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useConversation from "../zustand/useConversation";
 import axios from "axios";
 import toast from "react-hot-toast";
-
+import {useAuthContext} from '../context/AuthContext.jsx' 
 
 const useGetMessages = ({id}) => {
 	const [loading, setLoading] = useState(false);
