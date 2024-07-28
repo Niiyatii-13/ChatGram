@@ -12,7 +12,7 @@ const signUp = async(req,res)=>{
     try{
 
         const {fullName, username, password, confirmPassword,gender} = req.body;
-        // let image_filename = `${req.file.filename}`
+        let image_filename = `${req.file.filename}`
 
         if(password !== confirmPassword){
             return res.json({success:false, message:"Passwords do not match"})
@@ -31,7 +31,7 @@ const signUp = async(req,res)=>{
             username,
             password:hashedPassword,
             gender,
-            image:"" 
+            image:image_filename 
         })
 
         if(newUser){
